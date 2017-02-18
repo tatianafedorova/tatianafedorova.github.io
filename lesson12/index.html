@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Lesson 11</title>
+    <title>Lesson 12</title>
+    <script src="js/less.min.js"></script>
+    <link rel="stylesheet" href="css/style.less">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,16 +26,35 @@
   <body>
     <header id="main">
       <div class="container">
-        <div class="row main_head">
-          <div class="col-lg-6 main_logo">
-            <div class="main_logo_border">
-              <p><span class="logo_color">S</span>mart</p>
+        <div class="row main-head">
+          <div class="col-lg-6 main-logo">
+            <div class="main-logo-border">
+              <p><span class="logo-color">S</span>mart</p>
             </div>
           </div>
-          <div class="col-lg-6 main_nav">
-            <a class="main_nav_bar" href="#">
+          <div class="col-lg-6 main-nav">
+            <a class="main-nav-bar" href="#">
               <span class="line"></span>
             </a>
+          </div>
+        </div>
+        <div class="row main-text">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1><span>Smart</span> Agency Landign Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="main-form">
+              <p class="main-form-header"><span>Send</span> A Message</p>
+              <form action="#">
+                <input type="text" placeholder="Your Name">
+                <input type="email" required placeholder="Your Email">
+                <textarea placeholder="Your Message" rows="3"></textarea>
+                <button class="main-form-btn" type="submit">Send Message</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
