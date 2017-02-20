@@ -17,8 +17,27 @@ button:focus,
 textarea:focus {
   outline: none;
 }
+section {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.section-header {
+  margin-bottom: 7%;
+}
+.section-header h2 {
+  font-size: 45px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.section-header h2 span {
+  color: #ff5c36;
+}
+.section-header p {
+  font-size: 16px;
+}
 header {
-  background-color: #f5f5f5;
+  background: #f5f5f5 url(../img/main-bg.jpg) no-repeat center center;
+  background-size: cover;
   min-height: 635px;
   height: 100vh;
 }
@@ -154,5 +173,81 @@ header {
   -ms-transform: translateY(5px);
   -o-transform: translateY(5px);
   transform: translateY(5px);
+}
+.process-box {
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  padding-top: 20%;
+}
+.process-box i.fa {
+  font-size: 50px;
+}
+.process-box h4 {
+  margin-top: 25px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.process-box p {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.process-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -40%;
+  bottom: -30px;
+  border: none;
+  color: #706b73;
+  background-color: #fff;
+  width: 80%;
+  padding: 15px;
+  font-size: 16px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
+}
+.btn-plus {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 16px;
+  height: 2px;
+  background-color: #706b73;
+}
+.btn-plus::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #706b73;
+  -webkit-transform: rotate(90deg) translateY(8px);
+  -ms-transform: rotate(90deg) translateY(8px);
+  -o-transform: rotate(90deg) translateY(8px);
+  transform: rotate(90deg) translateY(8px);
+}
+.box-tomi {
+  background-color: #4eb2f7;
+}
+.box-koimona {
+  background-color: #c049f8;
+}
+.box-koire {
+  background-color: #817eff;
+}
+.box-lara {
+  background-color: #f74770;
+}
+i.fa-camera-retro {
+  -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 /*# sourceMappingURL=style.css.map */
