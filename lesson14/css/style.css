@@ -129,6 +129,14 @@ header {
   -o-border-radius: 50px;
   border-radius: 50px;
 }
+.main-form-btn:hover {
+  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08);
+}
+.main-form-btn span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+}
 .line {
   display: block;
   position: absolute;
@@ -194,6 +202,9 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.process-box:hover {
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
 .process-btn {
   position: absolute;
   left: 50%;
@@ -211,6 +222,9 @@ header {
   -o-border-radius: 50px;
   border-radius: 50px;
   box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
+}
+.process-btn:hover {
+  box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
 }
 .btn-plus {
   display: inline-block;
@@ -249,5 +263,50 @@ i.fa-camera-retro {
   -ms-transform: rotate(-15deg);
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
+}
+works-box {
+  position: relative;
+  height: 360px;
+}
+.signature {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.signature:hover {
+  opacity: 1;
+}
+.sign p {
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.sign button {
+  border: none;
+  padding: 15px 35px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #ff5c36;
+}
+.works-row {
+  margin-top: 3%;
 }
 /*# sourceMappingURL=style.css.map */
