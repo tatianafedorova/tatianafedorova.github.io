@@ -264,7 +264,7 @@ i.fa-camera-retro {
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
-works-box {
+.works-box {
   position: relative;
   height: 360px;
 }
