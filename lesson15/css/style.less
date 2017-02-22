@@ -17,6 +17,7 @@
 @bg-koimona: #c049f8;
 @bg-koire: #817eff;
 @bg-lara: #f74770;
+@bg-services-list: #fbfbfb;
 // base setting
 body {
   font-size: 14px;
@@ -45,6 +46,7 @@ section {
     font-size: 16px;
   }
 }
+
 // main
 header {
   background: @bg-grey url(../img/main-bg.jpg) no-repeat center center;
@@ -190,6 +192,7 @@ header {
     transform: translateY(5px);
   }
 }
+
 // Process section
 .process {
   &-box {
@@ -276,6 +279,7 @@ i.fa-camera-retro {
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
+
 // works section
 .works-box {
   position: relative;
@@ -323,4 +327,70 @@ i.fa-camera-retro {
 .works-row {
   margin-top: 3%;
 }
+
+// services
+.services {
+  &-list {
+    list-style: none;
+    &-item {
+      display: block;
+      margin: 9px auto;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      background-color: @bg-services-list;
+      &:hover {
+        background-color: @white;
+        box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+      }
+    }
+  }
+  &-info {
+    h4 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  &-line {
+    display: inline-block;
+    width: 60px;
+    height: 4px;
+    background-color: @base-red;
+    margin: 10px 0 10px 0;
+  }
+  &-btn {
+    margin-top: 50px;
+    border: none;
+    border: 1px solid lighten(@base-black, 50%);
+    color: @base-black;
+    background-color: @white;
+    padding: 15px 55px;
+    font-size: 16px; 
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
+    &:hover {
+      box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+    }
+  }
+}
+.panel-default>.panel-heading {
+  h4 {
+    color: @base-red;
+    .opn-bold;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: darken(@base-red, 15%);
+      }
+    }
+  }
+}
+
 /*# sourceMappingURL=style.css.map */ 

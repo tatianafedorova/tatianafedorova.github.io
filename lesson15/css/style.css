@@ -309,4 +309,61 @@ i.fa-camera-retro {
 .works-row {
   margin-top: 3%;
 }
+.services-list {
+  list-style: none;
+}
+.services-list-item {
+  display: block;
+  margin: 9px auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: #fbfbfb;
+}
+.services-list-item:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+}
+.services-info h4 {
+  font-size: 30px;
+}
+.services-info p {
+  font-size: 16px;
+}
+.services-line {
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff5c36;
+  margin: 10px 0 10px 0;
+}
+.services-btn {
+  margin-top: 50px;
+  border: none;
+  border: 1px solid #efeeef;
+  color: #706b73;
+  background-color: #fff;
+  padding: 15px 55px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
+}
+.services-btn:hover {
+  box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+}
+.panel-default > .panel-heading h4 {
+  color: #ff5c36;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.panel-default > .panel-heading h4 a {
+  text-decoration: none;
+}
+.panel-default > .panel-heading h4 a:hover {
+  color: #e82c00;
+}
 /*# sourceMappingURL=style.css.map */
