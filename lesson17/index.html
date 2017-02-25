@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Lesson 16</title>
+    <title>Lesson 17</title>
     <script src="js/less.min.js"></script>
     <link rel="stylesheet" href="css/style.less">
 
@@ -15,6 +15,7 @@
     <!-- My css -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="fotorama/fotorama.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
@@ -79,7 +80,7 @@
               <i class="fa fa-magnet"></i>
               <h4>Koc Koi Tomi</h4>
               <p>Lorem ipsum is dummy lorem very dumy</p>
-              <button class="process-btn"><span class="btn-plus"></span>Know More</button>
+              <button class="process-btn" data-toggle="modal" data-target="#modal-process-tomi"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
           <div class="col-lg-3">
@@ -87,7 +88,7 @@
               <i class="fa fa-bug"></i>
               <h4>Koimona Set</h4>
               <p>Lorem ipsum is dummy you   lorem very dumyL is</p>
-              <button class="process-btn"><span class="btn-plus"></span>Know More</button>
+              <button class="process-btn" data-toggle="modal" data-target="#modal-process-koimona"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
           <div class="col-lg-3">
@@ -95,7 +96,7 @@
               <i class="fa fa-gears"></i>
               <h4>Setting Koire</h4>
               <p>Lorem ipsum is dummy lorem very yLorem ipsus</p>
-              <button class="process-btn"><span class="btn-plus"></span>Know More</button>
+              <button class="process-btn" data-toggle="modal" data-target="#modal-process-koire"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
           <div class="col-lg-3">
@@ -103,7 +104,7 @@
               <i class="fa fa-camera-retro"></i>
               <h4>Ko Image Lara</h4>
               <p>Lorem ipsum is dummy ry dumyLorem ipsum is</p>
-              <button class="process-btn"><span class="btn-plus"></span>Know More</button> 
+              <button class="process-btn" data-toggle="modal" data-target="#modal-process-lara"><span class="btn-plus"></span>Know More</button> 
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #1</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -137,7 +138,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #2</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -148,7 +149,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #3</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -161,7 +162,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #4</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -172,7 +173,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #5</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -183,7 +184,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #6</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -196,7 +197,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #7</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -207,7 +208,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #8</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -218,7 +219,7 @@
               <div class="signature">
                 <div class="sign">
                   <p>Work #9</p>
-                  <button>Visit gallery</button>
+                  <button data-toggle="modal" data-target="#modal-gallery">Visit gallery</button>
                 </div>
               </div>
             </div>
@@ -258,7 +259,7 @@
                   <span class="services-line"></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br>
                   <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
-                  <button class="services-btn"><span class="btn-plus"></span> Know More</button>
+                  <button class="services-btn" data-toggle="modal" data-target="#modal-services"><span class="btn-plus"></span> Know More</button>
                 </div>
                 <div class="col-lg-4">
                   <img class="img-responsive" src="img/services/info-1.png" alt="Apple watch">
@@ -270,7 +271,7 @@
                   <span class="services-line"></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br>
                   <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
-                  <button class="services-btn"><span class="btn-plus"></span> Know More</button>
+                  <button class="services-btn" data-toggle="modal" data-target="#modal-services"><span class="btn-plus"></span> Know More</button>
                 </div>
                 <div class="col-lg-4">
                   <img class="img-responsive" src="img/services/info-2.png" alt="Iphone">
@@ -282,7 +283,7 @@
                   <span class="services-line"></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br>
                   <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
-                  <button class="services-btn"><span class="btn-plus"></span> Know More</button>
+                  <button class="services-btn" data-toggle="modal" data-target="#modal-services"><span class="btn-plus"></span> Know More</button>
                 </div>
                 <div class="col-lg-4">
                   <img class="img-responsive" src="img/services/info-3.png" alt="Ipad">
@@ -363,7 +364,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
           </div>
         </div>
-        <div class="row">
+        <div cl ass="row">
           <div class="col-lg-12">
             <div class="feedback-slider">
               <div class="feedback-slider-item text-center">
@@ -456,9 +457,169 @@
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <button data-toggle="modal" data-target="#modal-contact" class="footer-btn">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- modal-contactUs -->
+    <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Контактная информация</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Адрес: г. Ветроград, ул. Семи Ветров, 7 <br>
+              Телефон: +7 (495) 666-02-66
+            </p>
+            <p>
+              Время работы: <br>
+              Пн — пт: с 10:00 до 22:00 <br>
+              Сб — вс: с 10:00 до 19:00
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal-gallery -->
+    <div class="modal fade" id="modal-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"><span>Works</span> Gallery</h4>
+          </div>
+          <div class="modal-body">
+            <div class="fotorama"
+            data-width="100%"
+            data-ratio="500/500"
+            data-arrows="true"
+            data-click="true"
+            data-loop="true"
+            data-nav="thumbs"
+            data-thumbwidth="50"
+            data-thumbheight="50"
+            >
+              <img src="img/works/1.jpg"" alt="Work 1">
+              <img src="img/works/2.jpg"" alt="Work 2">
+              <img src="img/works/3.jpg"" alt="Work 3">
+              <img src="img/works/4.jpg"" alt="Work 4">
+              <img src="img/works/5.jpg" alt="Work 5">
+              <img src="img/works/6.jpg" alt="Work 6">
+              <img src="img/works/7.jpg" alt="Work 7">
+              <img src="img/works/8.jpg" alt="Work 8">
+              <img src="img/works/9.jpg" alt="Work 9">
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- modal-process -->
+    <div class="modal fade" id="modal-process-tomi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Koc Koi Tomi</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fuga non explicabo dolorem veritatis inventore, laborum accusantium! Quidem quos temporibus repellat! Repellat quod at sequi. Placeat tenetur, doloremque harum, dolores ex saepe quisquam recusandae cum fugit magnam aliquam neque beatae dignissimos ipsam pariatur! Eius voluptatibus id aspernatur incidunt tempora ipsum dolore, fugiat eligendi quae, at animi provident? Sapiente asperiores temporibus unde dicta ut modi enim, sit neque in, quidem beatae? Accusantium modi, repellat itaque ipsa saepe pariatur atque quisquam tenetur voluptas perferendis possimus voluptate totam voluptatum vel magni dolorum odio facilis? Quam amet perferendis magni dolor, iste, ratione voluptatibus perspiciatis.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal-process-koire" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Setting Koire</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt temporibus assumenda quam, eveniet, est amet inventore libero. Iure eum laboriosam at nam, modi optio, laudantium repellat consequuntur sapiente, voluptas aliquam quam assumenda dolore quisquam, repudiandae neque quod error officiis fugit facere totam praesentium culpa fuga inventore. Iusto voluptatem autem doloremque modi, ab dolorum necessitatibus magnam illum voluptas, a nesciunt saepe dolore porro, fugit blanditiis? Eum dolor earum illum omnis. Id quasi accusamus atque ut voluptatem at odio omnis quia saepe itaque tempore ducimus eum fugiat dolore, sequi praesentium sint ab maxime! Molestiae similique veniam illum incidunt, voluptate eaque distinctio numquam dolor veritatis iste deleniti ipsam harum, minus non maxime quia obcaecati perspiciatis eius. Nam nesciunt placeat esse, excepturi fugiat. Quas.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal-process-koimona" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Koimona Set</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore soluta blanditiis odit non sunt perspiciatis, officia exercitationem natus sapiente inventore consequuntur eligendi maxime neque rem eveniet nihil sint cumque iure commodi ad doloribus. In veniam, laudantium aperiam eligendi totam id magnam, vero provident voluptates error necessitatibus blanditiis esse impedit? Fugiat porro eveniet ut, in nihil nostrum non, ipsa dolor omnis error laborum enim. Sequi distinctio, dolorem temporibus fuga voluptatum, minima, perspiciatis laboriosam earum non error iusto a. Itaque facere, provident repellat labore ex velit. Error dignissimos, at. Quis, optio qui. Dolor enim ipsam commodi modi voluptates dolore aperiam quod vero. Facilis aspernatur saepe odit error, ipsum sunt velit cum quaerat vitae corporis iusto at perferendis debitis, itaque architecto obcaecati amet provident illum perspiciatis laboriosam. Vero a, magnam dolore illum soluta! Quae eum doloribus recusandae natus at incidunt sunt numquam earum!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal-process-lara" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Ko Image Lara</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga odit quae minima culpa ullam, saepe architecto assumenda. Aspernatur possimus non harum, nam quia iusto ratione, mollitia odit error repellat maxime incidunt rem, a repudiandae neque assumenda veritatis. Earum accusantium velit, tempore cupiditate quis voluptatibus minima consectetur iure porro, iste quibusdam aut. Aperiam amet inventore, eveniet nesciunt nostrum officiis! Fugiat pariatur harum nulla ipsam magni totam quisquam distinctio, suscipit nobis, repudiandae laborum vero, aliquid blanditiis ducimus ab possimus, sunt numquam. Similique saepe harum quisquam quae cum explicabo laudantium veritatis magnam. Distinctio quidem sunt dolorum eos sed est totam corrupti quis eaque provident ad vitae ut nam saepe voluptatum libero expedita ullam ducimus, beatae officiis voluptatibus obcaecati delectus nobis, repellat. Aut ab saepe, quam magni animi inventore. Hic dicta adipisci molestias unde animi, ut nemo numquam minima maxime quo voluptatem itaque eius, dolorem veniam ex illum tenetur aperiam enim aut eos fuga.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- modal-services -->
+    <div class="modal fade" id="modal-services" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modern Design</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptas voluptatum, quas placeat iste ratione. Tempore ipsam vero suscipit labore cupiditate, doloremque expedita ex autem error modi velit dolor explicabo amet ipsa voluptates impedit ipsum eos reiciendis incidunt itaque, perspiciatis facilis repellat. Provident quibusdam aut tempora hic ullam, veniam iusto nulla ex! Ad error eum, maiores sunt unde voluptas, sint praesentium modi, nemo quidem eligendi eius laboriosam natus, dolore dolorem totam? Explicabo voluptate laudantium, dolores assumenda mollitia consequuntur non sequi ex, expedita ipsam enim, quas aperiam possimus amet! Mollitia nihil similique, ipsum ipsa, tempore magni placeat provident nostrum commodi ratione harum veniam maxime cum, nisi esse odio! Quidem accusamus neque praesentium, autem placeat fugit sunt, dolorum quas odio ex provident tempora quaerat consectetur nostrum voluptate deleniti, cum! Quidem, nisi ducimus voluptatem exercitationem voluptatum numquam sapiente delectus deserunt placeat veniam quia omnis suscipit aut, earum quae, repellendus distinctio nostrum facilis blanditiis. Nemo, a reiciendis quo, unde tempora optio dolorem illo eligendi saepe repudiandae eos fugit commodi consectetur ab temporibus corrupti asperiores cum, voluptas! Corporis fuga, voluptatum tenetur impedit. Eius molestiae voluptatum excepturi quam nihil sapiente, dolores quas provident culpa eos fugit, blanditiis cupiditate commodi magnam adipisci incidunt laudantium ipsam, placeat nobis!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Fotorama -->
+    <script src="fotorama/fotorama.js"></script>
     <script src="slick/slick.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
@@ -476,3 +637,5 @@
         });
       });
     </script>
+  </body>
+</html>
