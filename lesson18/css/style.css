@@ -504,4 +504,12 @@ footer {
   color: #706b73;
   background-color: #f5f5f5;
 }
+@keyframes move {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 150px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
