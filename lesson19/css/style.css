@@ -322,6 +322,7 @@ i.fa-camera-retro {
 .services-list {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 .services-list-item {
   display: inline-block;
@@ -347,7 +348,7 @@ i.fa-camera-retro {
   margin: 10px 0 10px 0;
 }
 .services-btn {
-  margin-top: 50px;
+  margin-top: 7%;
   border: none;
   border: 1px solid #efeeef;
   color: #706b73;
@@ -534,7 +535,7 @@ footer {
     padding-bottom: 7%;
   }
   .section-header h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .section-header p {
     font-size: 14px;
@@ -548,8 +549,16 @@ footer {
   .services-list-item img {
     width: 80px;
   }
+  .services-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
   .process-box {
     margin-top: 75px;
+  }
+  .working-process {
+    width: 100%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -592,6 +601,11 @@ footer {
   .services-list-item img {
     width: 80px;
   }
+  .services-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
   .process-box {
     margin-top: 75px;
   }
@@ -602,6 +616,9 @@ footer {
   }
   .works-box {
     height: 220px;
+  }
+  .services-info img {
+    margin-top: 5%;
   }
   .services-list-item img {
     width: 80px;
