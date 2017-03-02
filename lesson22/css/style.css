@@ -566,6 +566,9 @@ footer {
   .working-process {
     width: 100%;
   }
+  .video-container {
+    display: none;
+  }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .main-logo-border {
@@ -615,6 +618,9 @@ footer {
   .process-box {
     margin-top: 75px;
   }
+  .video-container {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .process-box {
@@ -629,6 +635,9 @@ footer {
   .services-list-item img {
     width: 80px;
   }
+  .video-container {
+    display: none;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .works-box {
@@ -642,6 +651,9 @@ footer {
   }
   .process-btn {
     bottom: 45px;
+  }
+  .video-container {
+    display: none;
   }
 }
 .overlay-nav {
@@ -681,5 +693,48 @@ footer {
 }
 .close-nav:hover {
   cursor: pointer;
+}
+header {
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
 /*# sourceMappingURL=style.css.map */

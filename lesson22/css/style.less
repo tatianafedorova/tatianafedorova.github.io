@@ -626,6 +626,9 @@ footer {
   .working-process {
     width: 100%;
   }
+  .video-container {
+    display: none;
+  }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .main {
@@ -689,6 +692,9 @@ footer {
     margin-top: 75px;
    }
   }
+  .video-container {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
  .process {
@@ -711,6 +717,10 @@ footer {
       }
     }
   }
+  .video-container {
+    display: none;
+  }
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .works-box {
@@ -728,6 +738,9 @@ footer {
     &-btn {
       bottom: 45px;
     }
+  }
+  .video-container {
+    display: none;
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -775,6 +788,72 @@ footer {
   }
 }
  
+ header {
+  position: relative;
+ }
 
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+// Parallax section 
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+// .parallax-bg {
+//   background: url(../img/parallax/office.jpg) no-repeat center center;
+//   width: 100%;
+// }
+// .layer img {
+//   width: 250px;
+// }
+
+// .layer-1 {
+//   margin-left: 77%;
+//   margin-top: 10%;
+// }
+// .layer-2 {
+//   margin-left: 30%;
+//   margin-top: 6%;
+// }
+// .layer-3 {
+//   margin-left: 12%;
+//   margin-top: -10%;
+// }
 
 /*# sourceMappingURL=style.css.map */ 
