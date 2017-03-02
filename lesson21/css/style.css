@@ -154,9 +154,15 @@ header {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
 }
 .line::before,
 .line::after {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   position: absolute;
   right: 0;
   top: 50%;
@@ -637,5 +643,43 @@ footer {
   .process-btn {
     bottom: 45px;
   }
+}
+.overlay-nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.overlay-nav ul {
+  padding-top: 10%;
+  line-height: 2.5;
+  list-style: none;
+  text-align: center;
+}
+.overlay-nav ul li a {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.overlay-nav ul li a:hover {
+  text-decoration: none;
+  color: #ff5c36;
+}
+.close-nav {
+  position: fixed;
+  font-size: 50px;
+  top: 5%;
+  right: 5%;
+  color: #fff;
+}
+.close-nav:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

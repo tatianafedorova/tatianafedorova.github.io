@@ -1,7 +1,7 @@
 <?php 
   $whatever = $_POST['whatever'];
   $name=$_POST['username'];
-  $email=$_POST['email'];
+  $phone=$_POST['phone'];
   $user_message=$_POST['user_message'];
 
   require_once('phpmailer/PHPMailerAutoload.php');
@@ -19,7 +19,7 @@
   $mail->Port = 465;                                    // TCP port to connect to
 
   $mail->setFrom('tunerauto@inbox.ru', 'Ildar S. Zhiganshin');
-  $mail->addAddress('79991570874@ya.ru', 'Joe User');     // Add a recipient
+  $mail->addAddress('to-fedorova@mail.ru', 'Joe User');     // Add a recipient
   //$mail->addAddress('ellen@example.com');               // Name is optional
   //$mail->addReplyTo('info@example.com', 'Information');
   //$mail->addCC('cc@example.com');
