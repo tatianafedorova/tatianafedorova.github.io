@@ -20,7 +20,10 @@
 @bg-services-list: #fbfbfb;
 @yellow: #ffef3b;
 @grey: #adadad;
+@bg-partners: #fbfbfb;
 @bg-footer: #f7f7f7;
+@bg-socials: #d3d3d3;
+
 // base setting
 body {
   font-size: 14px;
@@ -517,6 +520,25 @@ i.fa-camera-retro {
   bottom: -50px;
 }
 
+// Partners section
+#partners {
+  background-color: @bg-partners;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: @bg-partners;
+}
+.partners {
+  list-style: none;
+  &-item {
+    display: inline-block;
+    margin-right: 5%;
+    padding: 15px 0 15px 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 // Footer
 footer {
   padding-top: 50px;
@@ -537,10 +559,41 @@ footer {
     border-radius: 27px;
     box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.07);
     &:hover {
-      box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.2);
+      box-shadow: 0px 0px 23px 0px rgba(20, 20, 21, 0.29);
+      background-color: @base-red;
+      color: @white;
+    }
+  }
+  &-socials {
+    margin: 40px auto;
+    p {
+      display: inline-block;
     }
   }
 }
+
+.fa-facebook, .fa-twitter, .fa-dribbble, .fa-behance {
+    height: 53px;
+    width: 53px;
+    padding: 16px;
+    margin-right: 3%;
+    font-size: 20px;
+    color: @white;
+    background-color: @bg-socials;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+.fa-facebook, .fa-twitter, .fa-dribbble, .fa-behance {
+  &:hover {
+    box-shadow: 0px 0px 23px 0px rgba(20, 20, 21, 0.29);
+    background-color: @base-red;
+  }
+}
+
 
 // Modals
 .modal {
@@ -629,6 +682,14 @@ footer {
   .video-container {
     display: none;
   }
+  .fa-facebook, .fa-twitter, .fa-dribbble, .fa-behance {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+  }
+  .copywrite {
+    padding-top: 20px;
+  }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .main {
@@ -695,6 +756,9 @@ footer {
   .video-container {
     display: none;
   }
+  .copywrite {
+    padding-top: 20px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
  .process {
@@ -741,6 +805,9 @@ footer {
   }
   .video-container {
     display: none;
+  }
+  .partners-item {
+    margin-right: 20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {

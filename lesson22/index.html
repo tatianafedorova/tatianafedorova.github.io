@@ -38,7 +38,7 @@
           <source src="video-bg/WEBM/Morning-Routine.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <div class="poster hidden">
-          <img src="video-bg/Snapshots/Morning-Routine.jpg" alt="">
+          <img src="video-bg/Snapshots/Morning-Routine.jpg" alt="Фоновое видео">
         </div>
       </div>
       <div class="container">
@@ -124,8 +124,8 @@
       </div>
     </section>
 
-    <section id="scroll" lass="parallax-window" data-parallax="scroll" data-image-src="img/parallax/4.jpg">
-    </section>
+    <div id="scroll-1" class="parallax-window" data-parallax="scroll" data-image-src="img/parallax/4.jpg">
+    </div>
 
     <!-- Works section -->
     <section id="works">
@@ -240,8 +240,8 @@
       </div>
     </section>
 
-    <section id="scroll" lass="parallax-window" data-parallax="scroll" data-image-src="img/parallax/5.jpg">
-    </section>
+    <div id="scroll-2" class="parallax-window" data-parallax="scroll" data-image-src="img/parallax/5.jpg">
+    </div>
 
     <!-- Services section -->
     <section id="services">
@@ -310,8 +310,8 @@
       </div>
     </section>
 
-    <section id="scroll" lass="parallax-window" data-parallax="scroll" data-image-src="img/parallax/6.jpg">
-    </section>
+    <div id="scroll-3" class="parallax-window" data-parallax="scroll" data-image-src="img/parallax/6.jpg">
+    </div>
 
     <!-- FAQ section -->
     <section id="FAQ">
@@ -373,8 +373,8 @@
       </div> <!-- /container -->
     </section>
 
-    <section id="scroll" lass="parallax-window" data-parallax="scroll" data-image-src="img/parallax/7.jpg">
-    </section>
+    <div id="scroll-4" class="parallax-window" data-parallax="scroll" data-image-src="img/parallax/7.jpg">
+    </div>
     
     <!-- Parallax section   -->
 <!--     <section id="parallax">
@@ -499,6 +499,25 @@
       </div>
     </section>
 
+    <!-- Partners section -->
+    <div id="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+           <ul class="partners">
+            <li class="partners-item"><img src="img/partners/partner-1.png" alt="Описание"></li>
+            <li class="partners-item"><img src="img/partners/partner-2.png" alt="Описание"></li>
+            <li class="partners-item"><img src="img/partners/partner-3.png" alt="Описание"></li>
+            <li class="partners-item"><img src="img/partners/partner-1.png" alt="Описание"></li>
+            <li class="partners-item"><img src="img/partners/partner-2.png" alt="Описание"></li>
+            <li class="partners-item"><img src="img/partners/partner-3.png" alt="Описание"></li>
+          </ul>
+        </div>
+      </div>
+     </div>
+    </div> <!-- partners -->
+
+
     <!-- Footer -->
     <footer id="footer">
       <div class="container">
@@ -507,17 +526,26 @@
             <button data-toggle="modal" data-target="#modal-contact" class="footer-btn">Contact Us</button>
           </div>
         </div>
+        <div class="row footer-socials">
+          <div class="col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+            <p class="copywrite">&copy; 2015 - 2016 Deviserweb Ltd.</p>
+          </div>
+        </div>
       </div>
     </footer>
 
     <!-- Modals -->
     <!-- modal-contactUs -->
-    <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalContact">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Контактная информация</h4>
+            <h4 class="modal-title" id="myModalContact">Контактная информация</h4>
           </div>
           <div class="modal-body">
             <p>
@@ -538,12 +566,12 @@
     </div>
 
     <!-- modal-works -->
-    <div class="modal fade" id="modal-works" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-works" tabindex="-1" role="dialog" aria-labelledby="myModalWorks">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel"><span>Works</span> Gallery</h4>
+            <h4 class="modal-title" id="myModalWorks"><span>Works</span> Gallery</h4>
           </div>
           <div class="modal-body">
             <div class="fotorama"
@@ -556,10 +584,10 @@
             data-thumbwidth="50"
             data-thumbheight="50"
             >
-              <img src="img/works/1.jpg"" alt="Work 1">
-              <img src="img/works/2.jpg"" alt="Work 2">
-              <img src="img/works/3.jpg"" alt="Work 3">
-              <img src="img/works/4.jpg"" alt="Work 4">
+              <img src="img/works/1.jpg" alt="Work 1">
+              <img src="img/works/2.jpg" alt="Work 2">
+              <img src="img/works/3.jpg" alt="Work 3">
+              <img src="img/works/4.jpg" alt="Work 4">
               <img src="img/works/5.jpg" alt="Work 5">
               <img src="img/works/6.jpg" alt="Work 6">
               <img src="img/works/7.jpg" alt="Work 7">
@@ -572,12 +600,12 @@
     </div>
 
     <!-- modal-process -->
-    <div class="modal fade" id="modal-process-tomi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-process-tomi" tabindex="-1" role="dialog" aria-labelledby="myModalTomi">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Koc Koi Tomi</h4>
+            <h4 class="modal-title" id="myModalTomi">Koc Koi Tomi</h4>
           </div>
           <div class="modal-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fuga non explicabo dolorem veritatis inventore, laborum accusantium! Quidem quos temporibus repellat! Repellat quod at sequi. Placeat tenetur, doloremque harum, dolores ex saepe quisquam recusandae cum fugit magnam aliquam neque beatae dignissimos ipsam pariatur! Eius voluptatibus id aspernatur incidunt tempora ipsum dolore, fugiat eligendi quae, at animi provident? Sapiente asperiores temporibus unde dicta ut modi enim, sit neque in, quidem beatae? Accusantium modi, repellat itaque ipsa saepe pariatur atque quisquam tenetur voluptas perferendis possimus voluptate totam voluptatum vel magni dolorum odio facilis? Quam amet perferendis magni dolor, iste, ratione voluptatibus perspiciatis.</p>
@@ -589,12 +617,12 @@
       </div>
     </div>
     
-    <div class="modal fade" id="modal-process-koire" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-process-koire" tabindex="-1" role="dialog" aria-labelledby="myModalKoire">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Setting Koire</h4>
+            <h4 class="modal-title" id="myModalKoire">Setting Koire</h4>
           </div>
           <div class="modal-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt temporibus assumenda quam, eveniet, est amet inventore libero. Iure eum laboriosam at nam, modi optio, laudantium repellat consequuntur sapiente, voluptas aliquam quam assumenda dolore quisquam, repudiandae neque quod error officiis fugit facere totam praesentium culpa fuga inventore. Iusto voluptatem autem doloremque modi, ab dolorum necessitatibus magnam illum voluptas, a nesciunt saepe dolore porro, fugit blanditiis? Eum dolor earum illum omnis. Id quasi accusamus atque ut voluptatem at odio omnis quia saepe itaque tempore ducimus eum fugiat dolore, sequi praesentium sint ab maxime! Molestiae similique veniam illum incidunt, voluptate eaque distinctio numquam dolor veritatis iste deleniti ipsam harum, minus non maxime quia obcaecati perspiciatis eius. Nam nesciunt placeat esse, excepturi fugiat. Quas.</p>
@@ -606,12 +634,12 @@
       </div>
     </div>
     
-    <div class="modal fade" id="modal-process-koimona" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-process-koimona" tabindex="-1" role="dialog" aria-labelledby="myModalKoimona">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Koimona Set</h4>
+            <h4 class="modal-title" id="myModalKoimona">Koimona Set</h4>
           </div>
           <div class="modal-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore soluta blanditiis odit non sunt perspiciatis, officia exercitationem natus sapiente inventore consequuntur eligendi maxime neque rem eveniet nihil sint cumque iure commodi ad doloribus. In veniam, laudantium aperiam eligendi totam id magnam, vero provident voluptates error necessitatibus blanditiis esse impedit? Fugiat porro eveniet ut, in nihil nostrum non, ipsa dolor omnis error laborum enim. Sequi distinctio, dolorem temporibus fuga voluptatum, minima, perspiciatis laboriosam earum non error iusto a. Itaque facere, provident repellat labore ex velit. Error dignissimos, at. Quis, optio qui. Dolor enim ipsam commodi modi voluptates dolore aperiam quod vero. Facilis aspernatur saepe odit error, ipsum sunt velit cum quaerat vitae corporis iusto at perferendis debitis, itaque architecto obcaecati amet provident illum perspiciatis laboriosam. Vero a, magnam dolore illum soluta! Quae eum doloribus recusandae natus at incidunt sunt numquam earum!</p>
@@ -623,12 +651,12 @@
       </div>
     </div>
     
-    <div class="modal fade" id="modal-process-lara" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-process-lara" tabindex="-1" role="dialog" aria-labelledby="myModalLara">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Ko Image Lara</h4>
+            <h4 class="modal-title" id="myModalLara">Ko Image Lara</h4>
           </div>
           <div class="modal-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga odit quae minima culpa ullam, saepe architecto assumenda. Aspernatur possimus non harum, nam quia iusto ratione, mollitia odit error repellat maxime incidunt rem, a repudiandae neque assumenda veritatis. Earum accusantium velit, tempore cupiditate quis voluptatibus minima consectetur iure porro, iste quibusdam aut. Aperiam amet inventore, eveniet nesciunt nostrum officiis! Fugiat pariatur harum nulla ipsam magni totam quisquam distinctio, suscipit nobis, repudiandae laborum vero, aliquid blanditiis ducimus ab possimus, sunt numquam. Similique saepe harum quisquam quae cum explicabo laudantium veritatis magnam. Distinctio quidem sunt dolorum eos sed est totam corrupti quis eaque provident ad vitae ut nam saepe voluptatum libero expedita ullam ducimus, beatae officiis voluptatibus obcaecati delectus nobis, repellat. Aut ab saepe, quam magni animi inventore. Hic dicta adipisci molestias unde animi, ut nemo numquam minima maxime quo voluptatem itaque eius, dolorem veniam ex illum tenetur aperiam enim aut eos fuga.</p>
@@ -641,12 +669,12 @@
     </div>
   
     <!-- modal-services -->
-    <div class="modal fade" id="modal-services" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-services" tabindex="-1" role="dialog" aria-labelledby="myModalServices">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modern Design</h4>
+            <h4 class="modal-title" id="myModalServices">Modern Design</h4>
           </div>
           <div class="modal-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptas voluptatum, quas placeat iste ratione. Tempore ipsam vero suscipit labore cupiditate, doloremque expedita ex autem error modi velit dolor explicabo amet ipsa voluptates impedit ipsum eos reiciendis incidunt itaque, perspiciatis facilis repellat. Provident quibusdam aut tempora hic ullam, veniam iusto nulla ex! Ad error eum, maiores sunt unde voluptas, sint praesentium modi, nemo quidem eligendi eius laboriosam natus, dolore dolorem totam? Explicabo voluptate laudantium, dolores assumenda mollitia consequuntur non sequi ex, expedita ipsam enim, quas aperiam possimus amet! Mollitia nihil similique, ipsum ipsa, tempore magni placeat provident nostrum commodi ratione harum veniam maxime cum, nisi esse odio! Quidem accusamus neque praesentium, autem placeat fugit sunt, dolorum quas odio ex provident tempora quaerat consectetur nostrum voluptate deleniti, cum! Quidem, nisi ducimus voluptatem exercitationem voluptatum numquam sapiente delectus deserunt placeat veniam quia omnis suscipit aut, earum quae, repellendus distinctio nostrum facilis blanditiis. Nemo, a reiciendis quo, unde tempora optio dolorem illo eligendi saepe repudiandae eos fugit commodi consectetur ab temporibus corrupti asperiores cum, voluptas! Corporis fuga, voluptatum tenetur impedit. Eius molestiae voluptatum excepturi quam nihil sapiente, dolores quas provident culpa eos fugit, blanditiis cupiditate commodi magnam adipisci incidunt laudantium ipsam, placeat nobis!</p>
@@ -659,12 +687,12 @@
     </div>
 
     <!-- modal-thanks -->
-    <div class="modal fade" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalThanks">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Спасибо<span id="nameUser"></span>!</h4>
+            <h4 class="modal-title" id="myModalThanks">Спасибо<span id="nameUser"></span>!</h4>
           </div>
           <div class="modal-body">
             <p>Скоро мы с вами свяжемся.</p>
@@ -677,12 +705,12 @@
     </div>
 
     <!-- modal-error -->
-    <div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-labelledby="myModalError">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel"></h4>
+            <h4 class="modal-title" id="myModalError"></h4>
           </div>
           <div class="modal-body">
             <p>Пожалуйста, заполните поле "Your Name"</p>
