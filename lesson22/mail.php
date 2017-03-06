@@ -1,7 +1,7 @@
 <?php
   //Принимаем постовые данные
   $whatever=$_POST['whatever'];
-  $name=$_POST['username'];
+  $username=$_POST['username'];
   $phone=$_POST['phone'];
   $user_message=$_POST['user_message'];
 
@@ -14,7 +14,7 @@
   $message = "
   Форма, которую заполнил клиент: ".htmlspecialchars($whatever)."<br />
   Имя пользователя: ".htmlspecialchars($username)."<br />
-  Phone: ".htmlspecialchars($phone)."<br />
+  Телефон: <a href='tel:$phone'> ".htmlspecialchars($phone)."</a>;
   Сообщение: ".htmlspecialchars($user_message);
 
   // Отправляем письмо при помощи функции mail();

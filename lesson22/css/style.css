@@ -482,20 +482,12 @@ i.fa-camera-retro {
   bottom: -50px;
 }
 #partners {
+  background-color: #fbfbfb;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #fbfbfb;
 }
-.partners {
-  list-style: none;
-}
-.partners-item {
-  display: inline-block;
-  margin-right: 5%;
-  padding: 15px 0 15px 0;
-}
-.partners-item:last-child {
-  margin-right: 0;
+#partners img {
+  margin: 50px auto;
 }
 footer {
   padding-top: 50px;
@@ -716,9 +708,6 @@ footer {
   }
   .video-container {
     display: none;
-  }
-  .partners-item {
-    margin-right: 20px;
   }
 }
 .overlay-nav {

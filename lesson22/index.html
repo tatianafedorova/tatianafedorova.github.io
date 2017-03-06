@@ -64,9 +64,12 @@
           <div class="col-lg-4 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
             <div class="main-form wow zoomIn" data-wow-duration="2.5s">
               <p class="main-form-header"><span>Send</span> A Message</p>
-              <!-- <form action="smart.php" method="POST"> -->
+<!--
+              <form action="mail.php" method="POST">
+              <form action="mailer.php" method="POST">
+-->
               <form id="main-form-ajax" action="#">
-             <!--    <input type="hidden" name="whatever" required value="Главная форма"> -->
+                 <input type="hidden" name="whatever" value="Главная форма"> 
                 <input id="userName" name="username" type="text" placeholder="Your Name">
                 <input id="phone" name="phone" type="tel" placeholder="Your Phone">
                 <textarea name="user_message" placeholder="Your Message" rows="3"></textarea>
@@ -89,35 +92,35 @@
         </div>
         <div class="row">
           <div class="working-process col-lg-3 col-sm-6 col-xs-6">
-            <div class="process-box box-tomi wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1.5s">
+            <div class="process-box box-tomi">
               <i class="fa fa-magnet"></i>
               <h4>Koc Koi Tomi</h4>
               <p>Lorem ipsum is dummy lorem very dumy is</p>
-              <button class="process-btn" data-toggle="modal" data-target="#modal-process-tomi"><span class="btn-plus"></span>Know More</button>
+              <button class="process-btn wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="1.5s" data-toggle="modal" data-target="#modal-process-tomi"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
           <div class="working-process col-lg-3 col-sm-6 col-xs-6">
-            <div class="process-box box-koimona wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="1.5s">
+            <div class="process-box box-koimona">
               <i class="fa fa-bug"></i>
               <h4>Koimona Set</h4>
               <p>Lorem ipsum is dummy you lorem very dumyL is</p>
-              <button class="process-btn" data-toggle="modal" data-target="#modal-process-koimona"><span class="btn-plus"></span>Know More</button>
+              <button class="process-btn wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="1.5s" data-toggle="modal" data-target="#modal-process-koimona"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
           <div class="working-process col-lg-3 col-sm-6 col-xs-6">
-            <div class="process-box box-koire wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1.5s">
+            <div class="process-box box-koire">
               <i class="fa fa-gears"></i>
               <h4>Setting Koire</h4>
               <p>Lorem ipsum is dummy lorem very yLorem ipsus</p>
-              <button class="process-btn" data-toggle="modal" data-target="#modal-process-koire"><span class="btn-plus"></span>Know More</button>
+              <button class="process-btn wow fadeInLeft" data-wow-delay="0.6s" data-wow-duration="1.5s" data-toggle="modal" data-target="#modal-process-koire"><span class="btn-plus"></span>Know More</button>
             </div>
           </div>
           <div class="working-process col-lg-3 col-sm-6 col-xs-6">
-            <div class="process-box box-lara wow fadeInLeft" data-wow-delay="0.8s" data-wow-duration="1.5s">
+            <div class="process-box box-lara">
               <i class="fa fa-camera-retro"></i>
               <h4>Ko Image Lara</h4>
               <p>Lorem ipsum is dummy ry dumyLorem ipsum</p>
-              <button class="process-btn" data-toggle="modal" data-target="#modal-process-lara"><span class="btn-plus"></span>Know More</button> 
+              <button class="process-btn wow fadeInLeft" data-wow-delay="0.8s" data-wow-duration="1.5s" data-toggle="modal" data-target="#modal-process-lara"><span class="btn-plus"></span>Know More</button> 
             </div>
           </div>
         </div>
@@ -503,19 +506,39 @@
     <div id="partners">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 text-center">
-           <ul class="partners">
-            <li class="partners-item"><img src="img/partners/partner-1.png" alt="Описание"></li>
-            <li class="partners-item"><img src="img/partners/partner-2.png" alt="Описание"></li>
-            <li class="partners-item"><img src="img/partners/partner-3.png" alt="Описание"></li>
-            <li class="partners-item"><img src="img/partners/partner-1.png" alt="Описание"></li>
-            <li class="partners-item"><img src="img/partners/partner-2.png" alt="Описание"></li>
-            <li class="partners-item"><img src="img/partners/partner-3.png" alt="Описание"></li>
-          </ul>
+          <div class="col-md-2 col-sm-6">
+            <a href="#">
+              <img src="img/partners/partner-1.png" alt="Описание" class="img-responsive img-centered">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="#">
+              <img src="img/partners/partner-2.png" alt="Описание" class="img-responsive img-centered">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="#">
+              <img src="img/partners/partner-3.png" alt="Описание" class="img-responsive img-centered">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="#">
+              <img src="img/partners/partner-1.png" alt="Описание" class="img-responsive img-centered">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="#">
+              <img src="img/partners/partner-2.png" alt="Описание" class="img-responsive img-centered">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="#">
+              <img src="img/partners/partner-3.png" alt="Описание" class="img-responsive img-centered">
+            </a>
+          </div>
         </div>
       </div>
-     </div>
-    </div> <!-- partners -->
+    </div>
 
 
     <!-- Footer -->
@@ -710,7 +733,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalError"></h4>
+            <h4 class="modal-title" id="myModalError">Error</h4>
           </div>
           <div class="modal-body">
             <p>Пожалуйста, заполните поле "Your Name"</p>
@@ -798,12 +821,7 @@
             type: "POST",
             url: "mail.php",
             data: $(this).serialize()
-          }).done(function() {
-            $(this).find("input").val("");
-            $("#modal-thanks").modal("show");
-            $("#main-form-ajax").trigger("reset");
           });
-          return false;
         });
       });
     </script>
