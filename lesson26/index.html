@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Lesson 25</title>
-    <script src="js/less.min.js"></script>
-    <link rel="stylesheet" href="css/style.less">
+    <title>Lesson 26</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +18,9 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Подключаем API Яндекс карт внутри тега head -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -575,7 +576,11 @@
         </div>
       </div>
     </div>
-
+    
+    <!-- Map section -->
+    <div id="map">
+      
+    </div>
 
     <!-- Footer -->
     <footer id="footer">
@@ -956,6 +961,41 @@
     </script> -->
 
     <script src="js/parallax.min.js"></script>
+
+    <!-- Настраиваем карту через JavaScript -->
+    <script type="text/javascript">
+    //создаем переменные "Карта" и "Метка"
+      ymaps.ready(init);
+      var myMap, 
+      myPlacemark;
+
+    //Инициализируем нашу карту, задав ей координаты, устанавливаем масштаб карты
+      function init(){ 
+        myMap = new ymaps.Map("map", {
+          center: [55.808963, 49.199228],
+          zoom: 16,
+        }); 
+
+    //Пишем свойства для нашей метки
+        myPlacemark = new ymaps.Placemark([55.808963, 49.199228], {
+          hintContent: 'улица Академика Губкина, 52А',
+          balloonContent: ''
+        }, {
+                // Опции.
+                // Необходимо указать данный тип макета. Показываем что это изображение.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки. Указываем путь до картинки
+                iconImageHref: 'img/map_logo.png',
+                // Размеры метки. 
+                iconImageSize: [100, 100],
+                // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
+                iconImageOffset: [-50, -100]
+              });            
+        //Добавляем метку на карту + убираем скролл мышкой 
+        myMap.geoObjects.add(myPlacemark);  
+        myMap.behaviors.disable('scrollZoom');
+      }
+    </script>
 
   </body>
 </html>

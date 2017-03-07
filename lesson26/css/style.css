@@ -508,6 +508,12 @@ i.fa-camera-retro {
 .flex-items {
   padding: 10px;
 }
+#map {
+  width: 100%;
+  height: 400px;
+  display: block;
+  position: relative;
+}
 footer {
   padding-top: 50px;
   padding-bottom: 50px;
